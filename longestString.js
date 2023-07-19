@@ -1,4 +1,4 @@
-function longestString(str)
+function findLongestWord(str)
 {
     let arr=str.split(" ");
     output=arr[0];
@@ -11,4 +11,4 @@ function longestString(str)
     }
     return output;
 }
-console.log(longestString("Helloa my name is Gunjan Bajaja"));
+console.log(findLongestWord("Helloa my name is Gunjan Bajaja"));
