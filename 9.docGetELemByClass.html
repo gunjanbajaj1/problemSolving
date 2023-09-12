@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 class="h1-tag">I am 1st h1 element</h1>
+<h2 class="h2-tag">I am 1st h2 element</h2>
+
+<p class="h2-tag">I am 1st p element</p>
+
+<h2 class="h2-tag">I am 2nd h2 element</h2>
+<div class="div-tag">I am 1st div element</div>
+<span class="span-tag">I am 1st span element</span><br><br>
+Enter Class to be searched:<input type="text" id="Value" required></input>
+<button id="btn">Search</button>
+<script>
+
+
+function myFunction(val) {
+const collection = document.body.children;
+for (let i = 0; i < collection.length; i++) {
+    if(val==collection[i].className){
+      console.log(collection[i].element);
+    } 
+  }
+}
+const button=document.getElementById("btn");
+const input1=document.getElementById("Value");
+console.log(input1.value);
+
+button.addEventListener('click', () => {
+  myFunction(input1.value);
+    });
+</script>
+
+</body>
+</html>
